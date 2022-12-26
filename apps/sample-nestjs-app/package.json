@@ -1,0 +1,26 @@
+{
+  "name": "sample-nestjs-app",
+  "version": "0.0.0",
+  "description": "Sample NestJS Application",
+  "main": "dist/app",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "lint": "eslint --ext .ts .",
+    "build": "nest build",
+    "dev": "nest start --watch",
+    "debug": "nest start --debug --watch"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.2.1",
+    "@nestjs/core": "^9.2.1",
+    "@nestjs/platform-express": "^9.2.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "sample-lib": "*",
+    "sample-nestjs-lib": "*"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.1.5",
+    "@nestjs/testing": "^9.2.1"
+  }
+}

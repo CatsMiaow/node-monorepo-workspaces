@@ -1,0 +1,5 @@
+{
+  "rules": { // Custom rules for sample-nestjs-lib
+    "@typescript-eslint/no-extraneous-class": "off"
+  }
+}

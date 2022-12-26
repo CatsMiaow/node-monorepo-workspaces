@@ -1,0 +1,44 @@
+{
+  "name": "node-monorepo-workspaces",
+  "version": "0.0.0",
+  "description": "Node.js Monorepo example with npm Workspaces",
+  "private": true,
+  "packageManager": "npm@9.2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "lint": "lerna run lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^16.18.11",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.30.0",
+    "eslint-plugin-jest": "^27.1.7",
+    "jest": "^29.3.1",
+    "lerna": "^6.3.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CatsMiaow/node-monorepo-workspaces.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Monorepo",
+    "Workspaces"
+  ],
+  "homepage": "https://github.com/CatsMiaow/node-monorepo-workspaces#readme",
+  "author": "CatsMiaow",
+  "license": "MIT"
+}
