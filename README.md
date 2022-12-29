@@ -4,7 +4,7 @@ Node.js Monorepo example with npm Workspaces
 
 ## Introduction
 
-Monorepo structure of TypeScript and [NestJS](https://nestjs.com) project using [Lerna](https://lerna.js.org) and [npm Workspace](https://docs.npmjs.com/cli/v9/using-npm/workspaces)
+Monorepo structure of TypeScript and [NestJS](https://nestjs.com) project using [Lerna](https://lerna.js.org) and [npm Workspaces](https://docs.npmjs.com/cli/v9/using-npm/workspaces)
 
 - Not using NestJS [monorepo mode](https://docs.nestjs.com/cli/monorepo).
 - Lerna now [depends on Nx](https://github.com/lerna/lerna/blob/329eb99e3080cc4d5de53960a7d0421091b08782/core/lerna/package.json#L66), so you can use [Nx commands](https://nx.dev/reference/commands) while using Lerna.
@@ -80,7 +80,7 @@ npm run any-task -w workspace-name
 ### Links
 
 - [Monorepo tools](https://monorepo.tools)
-- [npm Workspace](https://docs.npmjs.com/cli/v9/using-npm/workspaces)
+- [npm Workspaces](https://docs.npmjs.com/cli/v9/using-npm/workspaces)
 - [Lerna and Nx](https://lerna.js.org/docs/lerna-and-nx)
 - [Lerna commands](https://lerna.js.org/docs/api-reference/commands)
 - [Nx commands](https://nx.dev/reference/commands)
