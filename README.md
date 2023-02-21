@@ -17,12 +17,12 @@ npm run lint
 npm run test
 npm run build
 # The above command can also be used like this:
-npx lerna run build
-npx nx run-many --target=build
+npx lerna run lint,test,build
+#= npx nx run-many --target=build
 
 # Run tasks affected
 npx lerna run build --since=main
-npx nx affected --target=build
+#= npx nx affected --target=build
 ```
 
 ## Development
@@ -35,13 +35,20 @@ npm ci -w sample-nestjs-app
 
 # launch the development process
 npx lerna run dev --scope=sample-nestjs-app
-npx nx run sample-nestjs-app:dev
+#= npx nx run sample-nestjs-app:dev
 
 # execute npm tasks
 npx lerna run any-task --scope=workspace-name
 npx lerna exec npm run any-task --scope=workspace-name
-npx nx run workspace-name:any-task
+#= npx nx run workspace-name:any-task
 npm run any-task -w workspace-name
+```
+
+## Production
+
+```sh
+# https://docs.npmjs.com/cli/v9/commands/npm-ci#omit
+npm ci -w sample-nestjs-app --omit=dev
 ```
 
 ## Create a new workspace (apps or packages)
