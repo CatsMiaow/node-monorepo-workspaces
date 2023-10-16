@@ -11,16 +11,16 @@
     "debug": "nest start --debug --watch"
   },
   "dependencies": {
-    "@nestjs/common": "^9.2.1",
-    "@nestjs/core": "^9.2.1",
-    "@nestjs/platform-express": "^9.2.1",
+    "@nestjs/common": "^10.2.7",
+    "@nestjs/core": "^10.2.7",
+    "@nestjs/platform-express": "^10.2.7",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.0",
+    "rxjs": "^7.8.1",
     "sample-lib": "*",
     "sample-nestjs-lib": "*"
   },
   "devDependencies": {
-    "@nestjs/cli": "^9.1.5",
-    "@nestjs/testing": "^9.2.1"
+    "@nestjs/cli": "^10.1.18",
+    "@nestjs/testing": "^10.2.7"
   }
 }
