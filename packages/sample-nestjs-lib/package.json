@@ -12,8 +12,12 @@
     "lint": "eslint --ext .ts .",
     "build": "nest build"
   },
+  "devDependencies": {
+    "@nestjs/cli": "^10.1.18",
+    "@nestjs/testing": "^10.2.7"
+  },
   "peerDependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.0"
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0"
   }
 }
