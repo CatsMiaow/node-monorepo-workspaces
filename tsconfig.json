@@ -6,7 +6,7 @@
       "sample-nestjs-lib": ["packages/sample-nestjs-lib/src"]
     },
     // https://node.green
-    "target": "ES2022",
+    "target": "es2022",
     "module": "commonjs",
     "moduleResolution": "node",
     "incremental": true,
