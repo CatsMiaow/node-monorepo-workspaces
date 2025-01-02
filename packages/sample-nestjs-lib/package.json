@@ -13,8 +13,8 @@
     "build": "nest build"
   },
   "devDependencies": {
-    "@nestjs/cli": "^10.3.2",
-    "@nestjs/testing": "^10.3.7"
+    "@nestjs/cli": "^10.4.9",
+    "@nestjs/testing": "^10.4.15"
   },
   "peerDependencies": {
     "@nestjs/common": "^10.0.0",

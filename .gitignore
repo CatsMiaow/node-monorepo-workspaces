@@ -21,3 +21,4 @@ node_modules
 .node_repl_history
 
 .nx/cache
+.nx/workspace-data
