@@ -22,10 +22,30 @@
       "cache": true
     },
     "dev": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["build"]
     },
     "lint": {
       "cache": true
+    }
+  },
+  "release": {
+    "projects": ["apps/*"],
+    "projectsRelationship": "independent",
+    "releaseTagPatternCheckAllBranchesWhen": true,
+    "version": {
+      "conventionalCommits": true
+    },
+    "changelog": {
+      "projectChangelogs": {
+        "file": false,
+        "createRelease": "github",
+        "renderOptions": {
+          "authors": false,
+          "mapAuthorsToGitHubUsernames": true,
+          "commitReferences": true,
+          "versionTitleDate": true
+        }
+      }
     }
   }
 }

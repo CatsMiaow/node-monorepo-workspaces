@@ -12,7 +12,6 @@
     "dev": "tsx src/app"
   },
   "dependencies": {
-    "del-cli": "^6.0.0",
-    "sample-lib": "*"
+    "sample-lib": "file:../../packages/sample-lib"
   }
 }

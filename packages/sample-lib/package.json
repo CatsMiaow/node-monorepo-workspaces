@@ -12,8 +12,5 @@
     "test": "vitest run",
     "lint": "eslint",
     "build": "del-cli dist && tsc -p tsconfig.build.json"
-  },
-  "dependencies": {
-    "del-cli": "^6.0.0"
   }
 }
