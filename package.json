@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "build": "lerna run build",
@@ -17,15 +17,16 @@
     "lint": "lerna run lint"
   },
   "devDependencies": {
-    "@swc/cli": "^0.5.2",
+    "@eslint/js": "^9.23.0",
+    "@swc/cli": "^0.6.0",
     "@swc/core": "^1.11.16",
-    "@types/node": "^20.17.11",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.1",
-    "lerna": "^8.1.9",
+    "@types/node": "^22.14.0",
+    "@vitest/eslint-plugin": "^1.1.39",
+    "eslint": "^9.23.0",
+    "lerna": "^8.2.1",
     "tsx": "^4.19.3",
-    "typescript": "^5.7.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0",
     "unplugin-swc": "^1.5.1",
     "vitest": "^3.1.1"
   },

@@ -5,7 +5,7 @@ export default defineConfig({
   test: {
     globals: true,
     root: './',
-    testTimeout: 30_000,
+    testTimeout: 10_000,
   },
   plugins: [swc.vite()],
 });

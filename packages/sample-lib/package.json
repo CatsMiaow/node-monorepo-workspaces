@@ -10,10 +10,10 @@
   ],
   "scripts": {
     "test": "vitest run",
-    "lint": "eslint --ext .ts .",
+    "lint": "eslint",
     "build": "del-cli dist && tsc -p tsconfig.build.json"
   },
-  "devDependencies": {
-    "del-cli": "^5.1.0"
+  "dependencies": {
+    "del-cli": "^6.0.0"
   }
 }

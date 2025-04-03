@@ -1,6 +1,0 @@
-{
-  "rules": { // Custom rules for sample-nestjs-app
-    "@typescript-eslint/no-extraneous-class": "off",
-    "@typescript-eslint/no-floating-promises": ["error", { "ignoreIIFE": true, "ignoreVoid": true }]
-  }
-}
