@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "description": "Sample Application",
   "private": true,
-  "main": "dist/app",
+  "type": "module",
+  "main": "dist/app.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "vitest run",
     "lint": "eslint --ext .ts .",
     "build": "del-cli dist && tsc -p tsconfig.build.json",
-    "dev": "ts-node src/app"
+    "dev": "tsx src/app"
   },
   "devDependencies": {
     "del-cli": "^5.1.0"

@@ -1,4 +1,6 @@
-import { helloWorld, isGetBar } from '../src/service';
+import { describe, expect, test } from 'vitest';
+
+import { helloWorld, isGetBar } from '../src/service.js';
 
 describe('sample-app-test', () => {
   test('helloWorld', () => {

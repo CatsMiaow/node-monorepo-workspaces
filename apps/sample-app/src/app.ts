@@ -1,4 +1,4 @@
-import { helloWorld, isGetBar } from './service';
+import { helloWorld, isGetBar } from './service.js';
 
 (() => {
   console.log('sample-app> helloWorld', helloWorld());

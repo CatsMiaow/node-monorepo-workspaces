@@ -4,6 +4,13 @@
   "entryFile": "index",
   "compilerOptions": {
     "tsConfigPath": "tsconfig.build.json",
-    "deleteOutDir": true
+    "deleteOutDir": true,
+    "builder": {
+      "type": "swc",
+      "options": {
+        "swcrcPath": "../../.swcrc"
+      }
+    },
+    "typeCheck": true
   }
 }

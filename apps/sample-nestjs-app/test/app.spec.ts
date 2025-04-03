@@ -1,8 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { afterAll, beforeAll, describe, expect, test } from 'vitest';
 
-import { AppController } from '../src/app.controller';
-import { AppModule } from '../src/app.module';
-import { AppService } from '../src/app.service';
+import { AppController } from '../src/app.controller.js';
+import { AppModule } from '../src/app.module.js';
+import { AppService } from '../src/app.service.js';
 
 describe('sample-nestjs-app-test', () => {
   let app: TestingModule;

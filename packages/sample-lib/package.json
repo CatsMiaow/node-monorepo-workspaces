@@ -2,13 +2,14 @@
   "name": "sample-lib",
   "version": "0.0.0",
   "description": "Sample Package",
+  "type": "module",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "src/index.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "vitest run",
     "lint": "eslint --ext .ts .",
     "build": "del-cli dist && tsc -p tsconfig.build.json"
   },

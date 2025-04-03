@@ -1,2 +1,2 @@
-export * from './providers';
-export * from './utils.module';
+export * from './providers/index.js';
+export * from './utils.module.js';

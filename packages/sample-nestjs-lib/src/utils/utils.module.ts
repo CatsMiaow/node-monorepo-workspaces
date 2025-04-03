@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 
-import { SampleService } from './providers';
+import { SampleService } from './providers/index.js';
 
 @Module({
   providers: [SampleService],

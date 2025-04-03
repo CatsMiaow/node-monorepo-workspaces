@@ -6,14 +6,13 @@
     "project": ["tsconfig.json", "apps/**/tsconfig.json", "packages/**/tsconfig.json"],
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "jest"],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
-    "plugin:jest/recommended",
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked"
   ],
-  "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/jest.config.ts"],
+  "ignorePatterns": ["**/node_modules/**", "**/dist/**"],
   "rules": {
     // DIY
   }

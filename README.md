@@ -79,7 +79,7 @@ npm ci -w sample-nestjs-app --omit=dev
 |   +-- sample-lib // TypeScript simple sample-package
 |   +-- sample-nestjs-lib // NestJS module sample-package
 +-- .eslintrc // ESLint common configuration
-+-- jest.config.ts // Jest common configuration
++-- vitest.config.ts // Vitest common configuration
 +-- lerna.json // Lerna configuration
 +-- nx.json // Nx task pipeline configuration
 ```

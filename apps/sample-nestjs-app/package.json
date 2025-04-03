@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "description": "Sample NestJS Application",
   "private": true,
-  "main": "dist/app",
+  "type": "module",
+  "main": "dist/app.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "vitest run",
     "lint": "eslint --ext .ts .",
     "build": "nest build",
     "dev": "nest start --watch",

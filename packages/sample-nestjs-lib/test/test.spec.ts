@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { afterAll, beforeAll, describe, expect, test } from 'vitest';
 
-import { SampleService, UtilsModule } from '../src';
+import { SampleService, UtilsModule } from '../src/index.js';
 
 describe('sample-nestjs-lib-test', () => {
   let app: TestingModule;
