@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "sample-lib": ["packages/sample-lib/src"],
-      "sample-nestjs-lib": ["packages/sample-nestjs-lib/src"]
-    },
+    "paths": {},
     // https://node.green
     "target": "es2023",
     "module": "nodenext",
