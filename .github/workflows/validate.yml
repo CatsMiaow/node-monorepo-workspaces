@@ -1,33 +1,30 @@
-name: CI
+name: Validate
 
 on:
   push:
     branches: [main]
 
 jobs:
-  ci:
+  validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22.x
           cache: npm
       - name: Cache node modules
         id: cache-npm
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-      # https://nx.dev/recipes/ci/monorepo-ci-github-actions
-      - uses: nrwl/nx-set-shas@v3
       - if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm ci
-
-      - run: npx nx affected --target=lint
-      - run: npx nx affected --target=test
-      - run: npx nx affected --target=build
+      # https://nx.dev/getting-started/tutorials/typescript-packages-tutorial#create-a-ci-workflow
+      - uses: nrwl/nx-set-shas@v4
+      - run: npx nx affected -t lint test build
